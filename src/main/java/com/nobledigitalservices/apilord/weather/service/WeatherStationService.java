@@ -8,13 +8,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class WeatherStationService {
 
+    ObjectMapper objectMapper = new ObjectMapper();
 
 public String jsonMarshalling(String json, String desiredNode) throws  JsonProcessingException {
-    ObjectMapper objectMapper = new ObjectMapper();
     JsonNode jsonNode = objectMapper.readTree(json);
-    String time = String.valueOf(jsonNode.get(desiredNode));
-    return time;
+    return String.valueOf(jsonNode.get(desiredNode));
 }
+
+
 
 
 }

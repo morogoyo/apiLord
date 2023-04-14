@@ -1,0 +1,1 @@
+INSERT  INTO  api_lord.measurements (id, comments, subject, length, area, count) VALUES (1, 'JUST A COMMENT', 'SUBJECT', '100.00', '100.00', 100.00);

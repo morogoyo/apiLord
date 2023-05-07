@@ -1,0 +1,37 @@
+Calculate deck squares
+    - Insulation Boards
+        - SQ * 6.25 = #ISO
+        - (#ISO/2) * 6 = #Screws needed for Iso
+        - #Screws == #IsoPlates
+    - roll goods
+        - (SQ * 100) / 1000 = # rolls needed for job
+        - #rolls * 200 = #Screws needed
+        - #Screws == #CleatPlates
+calcualte parapet squares
+rtu
+    - rtu / 10 = term bar
+    - term bar * 20 = screws
+    - term bar
+        - caulk# = term bar#
+        - maticbucket = termbar / 350
+
+walkpads
+    - (walkpads LF * 12) / 60
+
+cricketArea
+split boot count
+close boot count
+pitch pockets
+    - pitch pocket filler
+    - quick crete
+
+roof hatch
+membrane stretch
+parapet SQF
+coping metal stretout
+scuppers
+overlow scuppers
+
+
+
+

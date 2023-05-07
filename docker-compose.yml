@@ -1,0 +1,26 @@
+version: '3'
+services:
+#    php-apache:
+#        image: php:7.2.1-apache
+#        ports:
+#            - 8080:80
+#        volumes:
+#            - ./DocumentRoot:/var/www/html:z
+#        links:
+#            - 'mysql'
+
+    mysql:
+        image: mysql:8
+        container_name: mysql
+        volumes:
+            - mysql:/var/lib/mysql
+        environment:
+            
+            MYSQL_ALLOW_EMPTY_PASSWORD: "no"
+            MYSQL_ROOT_PASSWORD: "root"
+#            MYSQL_USER: 'root'
+#            MYSQL_PASSWORD: 'root'
+            MYSQL_DATABASE: 'apilord'
+
+volumes:
+    mysql:

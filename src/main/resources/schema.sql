@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS apilord.user_roof_data
 (
 
 
+    brand              varchar(255),
     warranty           varchar(255),
     attachment         varchar(255),
     insulationValue    varchar(255),

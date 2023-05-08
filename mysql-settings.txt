@@ -1,7 +1,7 @@
 [
     {
-        "Id": "cf318cc7c3aac3ae1ee2495efb7839be32ccfc018b9ca068e71ebaf30b3cce39",
-        "Created": "2023-04-30T19:20:18.609325319Z",
+        "Id": "59f35184b6f718a92a85cf5062c745a3ec503d8dec3c9df9410fdb4510c198f0",
+        "Created": "2023-05-07T12:58:53.65233822Z",
         "Path": "docker-entrypoint.sh",
         "Args": [
             "mysqld"
@@ -13,17 +13,17 @@
             "Restarting": false,
             "OOMKilled": false,
             "Dead": false,
-            "Pid": 12817,
+            "Pid": 33582,
             "ExitCode": 0,
             "Error": "",
-            "StartedAt": "2023-05-07T09:55:12.27783413Z",
-            "FinishedAt": "2023-05-07T09:55:03.706578514Z"
+            "StartedAt": "2023-05-07T12:58:54.106185163Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
         },
         "Image": "sha256:4073e6a6f54214da05256022b9a86e2f3f480703d1fc457a7085107c854e5ce3",
-        "ResolvConfPath": "/var/lib/docker/containers/cf318cc7c3aac3ae1ee2495efb7839be32ccfc018b9ca068e71ebaf30b3cce39/resolv.conf",
-        "HostnamePath": "/var/lib/docker/containers/cf318cc7c3aac3ae1ee2495efb7839be32ccfc018b9ca068e71ebaf30b3cce39/hostname",
-        "HostsPath": "/var/lib/docker/containers/cf318cc7c3aac3ae1ee2495efb7839be32ccfc018b9ca068e71ebaf30b3cce39/hosts",
-        "LogPath": "/var/lib/docker/containers/cf318cc7c3aac3ae1ee2495efb7839be32ccfc018b9ca068e71ebaf30b3cce39/cf318cc7c3aac3ae1ee2495efb7839be32ccfc018b9ca068e71ebaf30b3cce39-json.log",
+        "ResolvConfPath": "/var/lib/docker/containers/59f35184b6f718a92a85cf5062c745a3ec503d8dec3c9df9410fdb4510c198f0/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/59f35184b6f718a92a85cf5062c745a3ec503d8dec3c9df9410fdb4510c198f0/hostname",
+        "HostsPath": "/var/lib/docker/containers/59f35184b6f718a92a85cf5062c745a3ec503d8dec3c9df9410fdb4510c198f0/hosts",
+        "LogPath": "/var/lib/docker/containers/59f35184b6f718a92a85cf5062c745a3ec503d8dec3c9df9410fdb4510c198f0/59f35184b6f718a92a85cf5062c745a3ec503d8dec3c9df9410fdb4510c198f0-json.log",
         "Name": "/mysql",
         "RestartCount": 0,
         "Driver": "overlay2",
@@ -34,14 +34,14 @@
         "ExecIDs": null,
         "HostConfig": {
             "Binds": [
-                "dockerfiles-compose_mysql:/var/lib/mysql:rw"
+                "apilord_mysql:/var/lib/mysql:rw"
             ],
             "ContainerIDFile": "",
             "LogConfig": {
                 "Type": "json-file",
                 "Config": {}
             },
-            "NetworkMode": "dockerfiles-compose_default",
+            "NetworkMode": "apilord_default",
             "PortBindings": {},
             "RestartPolicy": {
                 "Name": "",
@@ -57,9 +57,9 @@
             "CapAdd": null,
             "CapDrop": null,
             "CgroupnsMode": "host",
-            "Dns": [],
-            "DnsOptions": [],
-            "DnsSearch": [],
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
             "ExtraHosts": null,
             "GroupAdd": null,
             "IpcMode": "private",
@@ -127,18 +127,18 @@
         },
         "GraphDriver": {
             "Data": {
-                "LowerDir": "/var/lib/docker/overlay2/03db86dcc74f693ca2c56df3ad874748d5014d9b6bdf273f1ae34e0b6b745bcd-init/diff:/var/lib/docker/overlay2/93a9b27745cd60dd49194a542b69ec3e61b8f459a83e189d25083fba98a7448b/diff:/var/lib/docker/overlay2/3aefae8c3615295bb9e44996207305e891b0414889d8a5e34da5d728994262d7/diff:/var/lib/docker/overlay2/150bb81bef69f92f1ad0820a2ab89406a9b7f9716f7a76cee12e1a6a8b5b0810/diff:/var/lib/docker/overlay2/7467e45d031b5d3cd441ad68a8078482c2bf20c35ebddb2375e5d07c8e8cf30b/diff:/var/lib/docker/overlay2/14b4272dd24cef8c8c6484acf48302dadd694acd0d53b8ae630293a5539c51ed/diff:/var/lib/docker/overlay2/41fefecde2584456f223ea4e19fa0315c59c7d17f399ad8146fc57839d4d2aa5/diff:/var/lib/docker/overlay2/7842c6cb002d105156f78a4291b07d8ab22101ff02d6f14b62b48d9b2b57120f/diff:/var/lib/docker/overlay2/10979fdfe4fe23ff48013274c56a9625b8fc874831f99ccc1268705c68a9c0e6/diff:/var/lib/docker/overlay2/d00fb6b4f561c1e2c050b0ddf135a533bc929a7cfd70886510c6f9349ea60396/diff:/var/lib/docker/overlay2/523aa34b78ceb3a4adf7bc75871a97d3201fbbc1e7ccaa5cd811ff2ddc78dbdd/diff:/var/lib/docker/overlay2/bd941733aa3c4a6b9b00f518250ea1f557b21bba3152aeaa3eebf513acfb49a8/diff",
-                "MergedDir": "/var/lib/docker/overlay2/03db86dcc74f693ca2c56df3ad874748d5014d9b6bdf273f1ae34e0b6b745bcd/merged",
-                "UpperDir": "/var/lib/docker/overlay2/03db86dcc74f693ca2c56df3ad874748d5014d9b6bdf273f1ae34e0b6b745bcd/diff",
-                "WorkDir": "/var/lib/docker/overlay2/03db86dcc74f693ca2c56df3ad874748d5014d9b6bdf273f1ae34e0b6b745bcd/work"
+                "LowerDir": "/var/lib/docker/overlay2/2a20385d0b4406d4303a856c5dca1e6a76b96a0f9ead22585bb8ea9eabb5ecd0-init/diff:/var/lib/docker/overlay2/93a9b27745cd60dd49194a542b69ec3e61b8f459a83e189d25083fba98a7448b/diff:/var/lib/docker/overlay2/3aefae8c3615295bb9e44996207305e891b0414889d8a5e34da5d728994262d7/diff:/var/lib/docker/overlay2/150bb81bef69f92f1ad0820a2ab89406a9b7f9716f7a76cee12e1a6a8b5b0810/diff:/var/lib/docker/overlay2/7467e45d031b5d3cd441ad68a8078482c2bf20c35ebddb2375e5d07c8e8cf30b/diff:/var/lib/docker/overlay2/14b4272dd24cef8c8c6484acf48302dadd694acd0d53b8ae630293a5539c51ed/diff:/var/lib/docker/overlay2/41fefecde2584456f223ea4e19fa0315c59c7d17f399ad8146fc57839d4d2aa5/diff:/var/lib/docker/overlay2/7842c6cb002d105156f78a4291b07d8ab22101ff02d6f14b62b48d9b2b57120f/diff:/var/lib/docker/overlay2/10979fdfe4fe23ff48013274c56a9625b8fc874831f99ccc1268705c68a9c0e6/diff:/var/lib/docker/overlay2/d00fb6b4f561c1e2c050b0ddf135a533bc929a7cfd70886510c6f9349ea60396/diff:/var/lib/docker/overlay2/523aa34b78ceb3a4adf7bc75871a97d3201fbbc1e7ccaa5cd811ff2ddc78dbdd/diff:/var/lib/docker/overlay2/bd941733aa3c4a6b9b00f518250ea1f557b21bba3152aeaa3eebf513acfb49a8/diff",
+                "MergedDir": "/var/lib/docker/overlay2/2a20385d0b4406d4303a856c5dca1e6a76b96a0f9ead22585bb8ea9eabb5ecd0/merged",
+                "UpperDir": "/var/lib/docker/overlay2/2a20385d0b4406d4303a856c5dca1e6a76b96a0f9ead22585bb8ea9eabb5ecd0/diff",
+                "WorkDir": "/var/lib/docker/overlay2/2a20385d0b4406d4303a856c5dca1e6a76b96a0f9ead22585bb8ea9eabb5ecd0/work"
             },
             "Name": "overlay2"
         },
         "Mounts": [
             {
                 "Type": "volume",
-                "Name": "dockerfiles-compose_mysql",
-                "Source": "/var/lib/docker/volumes/dockerfiles-compose_mysql/_data",
+                "Name": "apilord_mysql",
+                "Source": "/var/lib/docker/volumes/apilord_mysql/_data",
                 "Destination": "/var/lib/mysql",
                 "Driver": "local",
                 "Mode": "rw",
@@ -147,7 +147,7 @@
             }
         ],
         "Config": {
-            "Hostname": "cf318cc7c3aa",
+            "Hostname": "59f35184b6f7",
             "Domainname": "",
             "User": "",
             "AttachStdin": false,
@@ -163,8 +163,7 @@
             "Env": [
                 "MYSQL_ALLOW_EMPTY_PASSWORD=no",
                 "MYSQL_ROOT_PASSWORD=root",
-                "MYSQL_DATABASE=api_lord",
-                "affinity:container==241d9d8e4a38f86ab709cf33289e0731e61adca73dfd7b9818a74fa835ab61b2",
+                "MYSQL_DATABASE=apilord",
                 "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
                 "GOSU_VERSION=1.16",
                 "MYSQL_MAJOR=8.0",
@@ -184,19 +183,19 @@
             ],
             "OnBuild": null,
             "Labels": {
-                "com.docker.compose.config-hash": "a7f8a901e3e7e36a0ef1a5f2b95e9a4334c9cb25e514b0ab9615a7010fdc6090",
+                "com.docker.compose.config-hash": "7c33d42a120f4f2f3ff5913d7306b64f8ed5fe5925e4e3ad97a0f6c707042d05",
                 "com.docker.compose.container-number": "1",
                 "com.docker.compose.oneoff": "False",
-                "com.docker.compose.project": "dockerfiles-compose",
+                "com.docker.compose.project": "apilord",
                 "com.docker.compose.project.config_files": "docker-compose.yml",
-                "com.docker.compose.project.working_dir": "/home/rtorres/Documents/dev/prod/dockerFiles-compose",
+                "com.docker.compose.project.working_dir": "/home/rtorres/Documents/dev/prod/ApiLord",
                 "com.docker.compose.service": "mysql",
                 "com.docker.compose.version": "1.29.2"
             }
         },
         "NetworkSettings": {
             "Bridge": "",
-            "SandboxID": "95f54256d2d689e25bc269084a2a2e83691b966bf1e72c843dd146f056e462fb",
+            "SandboxID": "511484c6397982abf50b3239b0a39daae3b5f3881cd6c89f5e60d74fc50ce64f",
             "HairpinMode": false,
             "LinkLocalIPv6Address": "",
             "LinkLocalIPv6PrefixLen": 0,
@@ -204,7 +203,7 @@
                 "3306/tcp": null,
                 "33060/tcp": null
             },
-            "SandboxKey": "/var/run/docker/netns/95f54256d2d6",
+            "SandboxKey": "/var/run/docker/netns/511484c63979",
             "SecondaryIPAddresses": null,
             "SecondaryIPv6Addresses": null,
             "EndpointID": "",
@@ -216,22 +215,22 @@
             "IPv6Gateway": "",
             "MacAddress": "",
             "Networks": {
-                "dockerfiles-compose_default": {
+                "apilord_default": {
                     "IPAMConfig": null,
                     "Links": null,
                     "Aliases": [
                         "mysql",
-                        "cf318cc7c3aa"
+                        "59f35184b6f7"
                     ],
-                    "NetworkID": "cb251a6b4f3a2781be69c86a00870c2fa9556af8eba2aed1dfb1b70a11d7b481",
-                    "EndpointID": "6d8669df553fa960c45389386cfb2c64ac9dd1682aeec1dc3c04bb1153aa79e3",
-                    "Gateway": "172.19.0.1",
-                    "IPAddress": "172.19.0.2",
+                    "NetworkID": "8f67024b766764949468505b044e68a1cf6e6268a41e4074b3c26d211b85497b",
+                    "EndpointID": "8e62e9dc0daddb1307278a8d2051c4fb2a965d1e031bd2c14b034d0d9ab93d13",
+                    "Gateway": "172.21.0.1",
+                    "IPAddress": "172.21.0.2",
                     "IPPrefixLen": 16,
                     "IPv6Gateway": "",
                     "GlobalIPv6Address": "",
                     "GlobalIPv6PrefixLen": 0,
-                    "MacAddress": "02:42:ac:13:00:02",
+                    "MacAddress": "02:42:ac:15:00:02",
                     "DriverOpts": null
                 }
             }

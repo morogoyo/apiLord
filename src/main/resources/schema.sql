@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS apilord.measurements
 CREATE TABLE IF NOT EXISTS apilord.user_roof_data
 (
 
-
+    id                 int,
     brand              varchar(255),
     warranty           varchar(255),
     attachment         varchar(255),

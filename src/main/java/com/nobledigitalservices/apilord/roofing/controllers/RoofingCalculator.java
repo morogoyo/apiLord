@@ -33,6 +33,11 @@ public class RoofingCalculator {
         return  measurements;
     }
 
+    @GetMapping(value = "/test")
+    public String testController(){
+        return  "php made it to the controller";
+    }
+
     @PostMapping(value = "/calculate")
     public List<UserRoofData> calculations(@RequestBody UserRoofData cal){
 

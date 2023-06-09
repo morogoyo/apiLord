@@ -1,13 +1,14 @@
 version: '3'
 services:
-#    php-apache:
-#        image: php:7.2.1-apache
-#        ports:
-#            - 8080:80
-#        volumes:
-#            - ./DocumentRoot:/var/www/html:z
-#        links:
-#            - 'mysql'
+    php-apache:
+        image: php:7.2.1-apache
+        container_name: apache
+        ports:
+            - "80:80"
+        volumes:
+            - /home/rtorres/Documents/dev/prod/commercial-roof-calculator:/var/www/html
+        links:
+            - 'mysql'
 
     mysql:
         image: mysql:8
@@ -33,3 +34,4 @@ services:
 
 volumes:
     mysql:
+    php-apache:
